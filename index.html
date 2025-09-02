@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semangat sayang </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="start-container" id="start-container">
+        <h1>Kuis Matematika Antariksa</h1>
+        <p>Pilih musik latar untuk menemani perjalananmu!</p>
+        <div class="music-options">
+            <label>
+                <input type="radio" name="music" value="bergema sampai selamanya.mp3" checked> bergema sampai selamanya
+            </label>
+            <label>
+                <input type="radio" name="music" value="sempurna.mp3"> sempurna
+            </label>
+            <label>
+                <input type="radio" name="music" value="lagu.mp3"> penjaga hati x bergema 
+            </label>
+        </div>
+        <button id="start-btn">Mulai Kuis</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-container" style="display: none;">
+        <div class="header">
+            <h1 class="quiz-title">Jawab Semua yaa cantik..🫶</h1>
+            <div class="timer" id="timer">60:00</div>
+        </div>
+        <div id="question-container">
+            </div>
+        <button id="submit-btn" onclick="submitQuiz()">Selesai</button>
+    </div>
+    
+    <div id="results-container">
+        </div>
+
+    <audio id="background-music" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
